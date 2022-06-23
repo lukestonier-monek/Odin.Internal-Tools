@@ -1,0 +1,11 @@
+{
+  "name": "odin.internal-tools",
+  "version": "1.0.0",
+  "description": "Internal tools to help with development/debugging/testing/interfacing anything Odin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Monek LTD",
+  "license": "ISC"
+}

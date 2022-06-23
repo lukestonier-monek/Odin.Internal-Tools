@@ -4,7 +4,8 @@
   "description": "Internal tools to help with development/debugging/testing/interfacing anything Odin",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "_demo-helpers/example-helper": "python _demo-helpers/example-helper/example-helper.py"
   },
   "author": "Monek LTD",
   "license": "ISC"

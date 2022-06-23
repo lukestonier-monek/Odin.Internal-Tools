@@ -15,8 +15,27 @@ Once a function has been completed use the following script template to add it t
 ## Running helpers
 Simply use the npm run [SCRIPT-KEY] command to execute a helper, any parameters that are required should follow: 
 ### DONT FORGET THE '--' BETWEEN THE SCRIPT NAME AND PARAMS TO BE PASSED
-eg: npm run _demo-helpers/example-helper -- -name=LUKE
+eg: 
+```
+npm run _demo-helpers/example-helper -- -name=LUKE
+```
 **use the 'eval' method in the 'helper_param_constructor' class to access the passed parameters in a list of tuples**
 
-# FORMATTING
+## FORMATTING
 View the example-helper to see how files should be formatted and imports are used, comments are added to point out core elements required
+
+## TEMPLATE
+```
+import sys
+sys.path.insert(0, '.')
+from _assets.helper_param_constructor import helper_param_constructor
+
+class __HELPER_NAME__(object):
+
+    @staticmethod
+    def start():
+        params = helper_param_constructor.eval()
+        
+if __name__ == "__main__":
+    __HELPER_NAME__.start()
+```

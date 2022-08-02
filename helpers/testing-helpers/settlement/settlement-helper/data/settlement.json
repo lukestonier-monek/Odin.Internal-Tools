@@ -1,0 +1,138 @@
+{
+    "dateGenerated": "|*DATE_GENERATED*|T09:00:00.00Z",
+    "merchant": {
+        "id": "|*THOR_MERCHANT_ID*|",
+        "name": "Monek Limited",
+        "address": {
+            "line1": "F2 & F3 City Wharf",
+            "line2": "Davidson Road",
+            "town": "Lichfield",
+            "county": "Staffordshire",
+            "postcode": " WS14 9DZ"
+        },
+        "bankAccount": {
+            "name": "Monek Limited",
+            "number": "48297175",
+            "sortCode": "40-51-62"
+        },
+        "contact": {
+            "name": "Jayne Grey",
+            "email": "tom.maddocks@monek.com"
+        },
+        "feeDefinitions": {
+            "sale": [
+                {
+                    "name": "mms",
+                    "calculation": "(transactionAmount * 1%) + 0.05"
+                }
+            ],
+            "refund": [
+                {
+                    "name": "mms",
+                    "calculation": "0.5 - interchange - scheme"
+                }
+            ]
+        },
+        "settlementReports": [
+            {
+                "name": "MMS",
+                "pricingType": "blended",
+                "feeDefinitions": {
+                    "sale": [
+                        {
+                            "label": "Interchange",
+                            "calculation": "interchange"
+                        },
+                        {
+                            "label": "Scheme",
+                            "calculation": "scheme"
+                        },
+                        {
+                            "label": "MMS",
+                            "calculation": "mms"
+                        }
+                    ],
+                    "refund": [
+                        {
+                            "label": "Refund",
+                            "calculation": "mms + interchange + scheme"
+                        }
+                    ]
+                },
+                "recipients": [
+                    {
+                        "name": "Jayne Grey",
+                        "email": "tom.maddocks@monek.com"
+                    }
+                ]
+            }
+        ]
+    },
+    "settledTransactions": [],
+    "unsettledTransactions": [],
+    "settlementReports": [
+        {
+            "name": "MMS",
+            "recipients": [
+                {
+                    "name": "Jayne Grey",
+                    "email": "tom.maddocks@monek.com"
+                }
+            ],
+            "feeDefinitions": {
+                "sale": [
+                    {
+                        "label": "Interchange",
+                        "calculation": "interchange"
+                    },
+                    {
+                        "label": "Scheme",
+                        "calculation": "scheme"
+                    },
+                    {
+                        "label": "MMS",
+                        "calculation": "mms"
+                    }
+                ],
+                "refund": [
+                    {
+                        "label": "Refund",
+                        "calculation": "mms + interchange + scheme"
+                    }
+                ]
+            },
+            "settledTransactions": [],
+            "unsettledTransactions": [],
+            "settlement": {
+                "fees": [],
+                "totalFeeAmount": "|*TOTAL_FEE_AMOUNT*|",
+                "totalSettlementAmount": "|*TOTAL_SETTLEMENT_AMOUNT*|"
+            },
+            "summary": {
+                "unsettledTransactions": {
+                    "quantity": 0,
+                    "totalAmount": "0"
+                },
+                "settledTransactions": {
+                    "quantity": 0,
+                    "totalAmount": "|*TOTAL_SETTLEMENT_AMOUNT*|"
+                }
+            }
+        }
+    ],
+    "settlement": {
+        "fees": [],
+        "totalFeeAmount": "|*TOTAL_FEE_AMOUNT*|",
+        "totalSettlementAmount": "|*TOTAL_SETTLEMENT_AMOUNT*|"
+    },
+    "summary": {
+        "unsettledTransactions": {
+            "quantity": 0,
+            "totalAmount": "0"
+        },
+        "settledTransactions": {
+            "quantity": 0,
+            "totalAmount": "|*TOTAL_SETTLEMENT_AMOUNT*|"
+        }
+    }
+}

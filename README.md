@@ -19,7 +19,7 @@ eg:
 ```
 npm run _demo-helpers/example-helper -- -name=LUKE
 ```
-**use the 'eval' method in the 'helper_param_constructor' class to access the passed parameters in a list of tuples**
+**use the 'eval' method in the 'helper_param_constructor' class to access the passed parameters in a key value pair**
 
 ## FORMATTING
 View the example-helper to see how files should be formatted and imports are used, comments are added to point out core elements required

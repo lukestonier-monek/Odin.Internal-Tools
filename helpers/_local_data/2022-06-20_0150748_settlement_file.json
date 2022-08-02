@@ -1,0 +1,580 @@
+{
+    "dateGenerated": "2022-06-20T09:00:00.00Z",
+    "merchant": {
+        "id": "0150748",
+        "name": "Monek Limited",
+        "address": {
+            "line1": "F2 & F3 City Wharf",
+            "line2": "Davidson Road",
+            "town": "Lichfield",
+            "county": "Staffordshire",
+            "postcode": " WS14 9DZ"
+        },
+        "bankAccount": {
+            "name": "Monek Limited",
+            "number": "48297175",
+            "sortCode": "40-51-62"
+        },
+        "contact": {
+            "name": "Jayne Grey",
+            "email": "tom.maddocks@monek.com"
+        },
+        "feeDefinitions": {
+            "sale": [
+                {
+                    "name": "mms",
+                    "calculation": "(transactionAmount * 1%) + 0.05"
+                }
+            ],
+            "refund": [
+                {
+                    "name": "mms",
+                    "calculation": "0.5 - interchange - scheme"
+                }
+            ]
+        },
+        "settlementReports": [
+            {
+                "name": "MMS",
+                "pricingType": "blended",
+                "feeDefinitions": {
+                    "sale": [
+                        {
+                            "label": "Interchange",
+                            "calculation": "interchange"
+                        },
+                        {
+                            "label": "Scheme",
+                            "calculation": "scheme"
+                        },
+                        {
+                            "label": "MMS",
+                            "calculation": "mms"
+                        }
+                    ],
+                    "refund": [
+                        {
+                            "label": "Refund",
+                            "calculation": "mms + interchange + scheme"
+                        }
+                    ]
+                },
+                "recipients": [
+                    {
+                        "name": "Jayne Grey",
+                        "email": "tom.maddocks@monek.com"
+                    }
+                ]
+            }
+        ]
+    },
+    "settledTransactions": [
+        {
+            "status": "accepted",
+            "partyId": "PO4033919758",
+            "merchantId": "000000",
+            "storeReference": "",
+            "terminalId": "37740426",
+            "merchantClassificationCode": "7299",
+            "transactionType": "sale",
+            "singleMessageOriginatingCreditTransfer": false,
+            "issuerCountry": "GBR",
+            "pan": "000000******8846",
+            "cardExpiryDate": "0123",
+            "transactionAmount": "46.51",
+            "transactionCurrency": "GBP",
+            "transactionCashbackAmount": "0",
+            "originalAmountPreDynamicCurrencyConversion": "",
+            "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+            "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+            "payeeReference": "20110090006006970A57",
+            "schemeReference": "482130292556964",
+            "worldpayTransactionSource": "C",
+            "airlineTicketNumber": "",
+            "authorisationMethod": "1",
+            "authorisationCode": "006970",
+            "tradingDay": "20220510",
+            "settlement": {
+                "fees": [
+                    {
+                        "name": "interchange",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "scheme",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "mms",
+                        "amount": "0"
+                    }
+                ],
+                "totalFeeAmount": "3.72",
+                "totalSettlementAmount": "42.79"
+            }
+        },
+        {
+            "status": "accepted",
+            "partyId": "PO4033919758",
+            "merchantId": "000000",
+            "storeReference": "",
+            "terminalId": "37740426",
+            "merchantClassificationCode": "7299",
+            "transactionType": "sale",
+            "singleMessageOriginatingCreditTransfer": false,
+            "issuerCountry": "GBR",
+            "pan": "000000******9160",
+            "cardExpiryDate": "0123",
+            "transactionAmount": "37.18",
+            "transactionCurrency": "GBP",
+            "transactionCashbackAmount": "0",
+            "originalAmountPreDynamicCurrencyConversion": "",
+            "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+            "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+            "payeeReference": "20110090006006970A57",
+            "schemeReference": "482130292556964",
+            "worldpayTransactionSource": "C",
+            "airlineTicketNumber": "",
+            "authorisationMethod": "1",
+            "authorisationCode": "006970",
+            "tradingDay": "20220510",
+            "settlement": {
+                "fees": [
+                    {
+                        "name": "interchange",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "scheme",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "mms",
+                        "amount": "0"
+                    }
+                ],
+                "totalFeeAmount": "2.6",
+                "totalSettlementAmount": "34.58"
+            }
+        },
+        {
+            "status": "accepted",
+            "partyId": "PO4033919758",
+            "merchantId": "000000",
+            "storeReference": "",
+            "terminalId": "37740426",
+            "merchantClassificationCode": "7299",
+            "transactionType": "sale",
+            "singleMessageOriginatingCreditTransfer": false,
+            "issuerCountry": "GBR",
+            "pan": "000000******4774",
+            "cardExpiryDate": "0123",
+            "transactionAmount": "71.11",
+            "transactionCurrency": "GBP",
+            "transactionCashbackAmount": "0",
+            "originalAmountPreDynamicCurrencyConversion": "",
+            "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+            "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+            "payeeReference": "20110090006006970A57",
+            "schemeReference": "482130292556964",
+            "worldpayTransactionSource": "C",
+            "airlineTicketNumber": "",
+            "authorisationMethod": "1",
+            "authorisationCode": "006970",
+            "tradingDay": "20220510",
+            "settlement": {
+                "fees": [
+                    {
+                        "name": "interchange",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "scheme",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "mms",
+                        "amount": "0"
+                    }
+                ],
+                "totalFeeAmount": "4.27",
+                "totalSettlementAmount": "66.84"
+            }
+        },
+        {
+            "status": "accepted",
+            "partyId": "PO4033919758",
+            "merchantId": "000000",
+            "storeReference": "",
+            "terminalId": "37740426",
+            "merchantClassificationCode": "7299",
+            "transactionType": "sale",
+            "singleMessageOriginatingCreditTransfer": false,
+            "issuerCountry": "GBR",
+            "pan": "000000******2807",
+            "cardExpiryDate": "0123",
+            "transactionAmount": "76.45",
+            "transactionCurrency": "GBP",
+            "transactionCashbackAmount": "0",
+            "originalAmountPreDynamicCurrencyConversion": "",
+            "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+            "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+            "payeeReference": "20110090006006970A57",
+            "schemeReference": "482130292556964",
+            "worldpayTransactionSource": "C",
+            "airlineTicketNumber": "",
+            "authorisationMethod": "1",
+            "authorisationCode": "006970",
+            "tradingDay": "20220510",
+            "settlement": {
+                "fees": [
+                    {
+                        "name": "interchange",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "scheme",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "mms",
+                        "amount": "0"
+                    }
+                ],
+                "totalFeeAmount": "5.35",
+                "totalSettlementAmount": "71.1"
+            }
+        },
+        {
+            "status": "accepted",
+            "partyId": "PO4033919758",
+            "merchantId": "000000",
+            "storeReference": "",
+            "terminalId": "37740426",
+            "merchantClassificationCode": "7299",
+            "transactionType": "sale",
+            "singleMessageOriginatingCreditTransfer": false,
+            "issuerCountry": "GBR",
+            "pan": "000000******1107",
+            "cardExpiryDate": "0123",
+            "transactionAmount": "25.64",
+            "transactionCurrency": "GBP",
+            "transactionCashbackAmount": "0",
+            "originalAmountPreDynamicCurrencyConversion": "",
+            "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+            "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+            "payeeReference": "20110090006006970A57",
+            "schemeReference": "482130292556964",
+            "worldpayTransactionSource": "C",
+            "airlineTicketNumber": "",
+            "authorisationMethod": "1",
+            "authorisationCode": "006970",
+            "tradingDay": "20220510",
+            "settlement": {
+                "fees": [
+                    {
+                        "name": "interchange",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "scheme",
+                        "amount": "0"
+                    },
+                    {
+                        "name": "mms",
+                        "amount": "0"
+                    }
+                ],
+                "totalFeeAmount": "1.54",
+                "totalSettlementAmount": "24.1"
+            }
+        }
+    ],
+    "unsettledTransactions": [],
+    "settlementReports": [
+        {
+            "name": "MMS",
+            "recipients": [
+                {
+                    "name": "Jayne Grey",
+                    "email": "tom.maddocks@monek.com"
+                }
+            ],
+            "feeDefinitions": {
+                "sale": [
+                    {
+                        "label": "Interchange",
+                        "calculation": "interchange"
+                    },
+                    {
+                        "label": "Scheme",
+                        "calculation": "scheme"
+                    },
+                    {
+                        "label": "MMS",
+                        "calculation": "mms"
+                    }
+                ],
+                "refund": [
+                    {
+                        "label": "Refund",
+                        "calculation": "mms + interchange + scheme"
+                    }
+                ]
+            },
+            "settledTransactions": [
+                {
+                    "status": "accepted",
+                    "partyId": "PO4033919758",
+                    "merchantId": "000000",
+                    "storeReference": "",
+                    "terminalId": "37740426",
+                    "merchantClassificationCode": "7299",
+                    "transactionType": "sale",
+                    "singleMessageOriginatingCreditTransfer": false,
+                    "issuerCountry": "GBR",
+                    "pan": "000000******8846",
+                    "cardExpiryDate": "0123",
+                    "transactionAmount": "46.51",
+                    "transactionCurrency": "GBP",
+                    "transactionCashbackAmount": "0",
+                    "originalAmountPreDynamicCurrencyConversion": "",
+                    "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+                    "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+                    "payeeReference": "20110090006006970A57",
+                    "schemeReference": "482130292556964",
+                    "worldpayTransactionSource": "C",
+                    "airlineTicketNumber": "",
+                    "authorisationMethod": "1",
+                    "authorisationCode": "006970",
+                    "tradingDay": "20220510",
+                    "settlement": {
+                        "fees": [
+                            {
+                                "name": "interchange",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "scheme",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "mms",
+                                "amount": "0"
+                            }
+                        ],
+                        "totalFeeAmount": "3.72",
+                        "totalSettlementAmount": "42.79"
+                    }
+                },
+                {
+                    "status": "accepted",
+                    "partyId": "PO4033919758",
+                    "merchantId": "000000",
+                    "storeReference": "",
+                    "terminalId": "37740426",
+                    "merchantClassificationCode": "7299",
+                    "transactionType": "sale",
+                    "singleMessageOriginatingCreditTransfer": false,
+                    "issuerCountry": "GBR",
+                    "pan": "000000******9160",
+                    "cardExpiryDate": "0123",
+                    "transactionAmount": "37.18",
+                    "transactionCurrency": "GBP",
+                    "transactionCashbackAmount": "0",
+                    "originalAmountPreDynamicCurrencyConversion": "",
+                    "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+                    "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+                    "payeeReference": "20110090006006970A57",
+                    "schemeReference": "482130292556964",
+                    "worldpayTransactionSource": "C",
+                    "airlineTicketNumber": "",
+                    "authorisationMethod": "1",
+                    "authorisationCode": "006970",
+                    "tradingDay": "20220510",
+                    "settlement": {
+                        "fees": [
+                            {
+                                "name": "interchange",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "scheme",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "mms",
+                                "amount": "0"
+                            }
+                        ],
+                        "totalFeeAmount": "2.6",
+                        "totalSettlementAmount": "34.58"
+                    }
+                },
+                {
+                    "status": "accepted",
+                    "partyId": "PO4033919758",
+                    "merchantId": "000000",
+                    "storeReference": "",
+                    "terminalId": "37740426",
+                    "merchantClassificationCode": "7299",
+                    "transactionType": "sale",
+                    "singleMessageOriginatingCreditTransfer": false,
+                    "issuerCountry": "GBR",
+                    "pan": "000000******4774",
+                    "cardExpiryDate": "0123",
+                    "transactionAmount": "71.11",
+                    "transactionCurrency": "GBP",
+                    "transactionCashbackAmount": "0",
+                    "originalAmountPreDynamicCurrencyConversion": "",
+                    "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+                    "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+                    "payeeReference": "20110090006006970A57",
+                    "schemeReference": "482130292556964",
+                    "worldpayTransactionSource": "C",
+                    "airlineTicketNumber": "",
+                    "authorisationMethod": "1",
+                    "authorisationCode": "006970",
+                    "tradingDay": "20220510",
+                    "settlement": {
+                        "fees": [
+                            {
+                                "name": "interchange",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "scheme",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "mms",
+                                "amount": "0"
+                            }
+                        ],
+                        "totalFeeAmount": "4.27",
+                        "totalSettlementAmount": "66.84"
+                    }
+                },
+                {
+                    "status": "accepted",
+                    "partyId": "PO4033919758",
+                    "merchantId": "000000",
+                    "storeReference": "",
+                    "terminalId": "37740426",
+                    "merchantClassificationCode": "7299",
+                    "transactionType": "sale",
+                    "singleMessageOriginatingCreditTransfer": false,
+                    "issuerCountry": "GBR",
+                    "pan": "000000******2807",
+                    "cardExpiryDate": "0123",
+                    "transactionAmount": "76.45",
+                    "transactionCurrency": "GBP",
+                    "transactionCashbackAmount": "0",
+                    "originalAmountPreDynamicCurrencyConversion": "",
+                    "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+                    "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+                    "payeeReference": "20110090006006970A57",
+                    "schemeReference": "482130292556964",
+                    "worldpayTransactionSource": "C",
+                    "airlineTicketNumber": "",
+                    "authorisationMethod": "1",
+                    "authorisationCode": "006970",
+                    "tradingDay": "20220510",
+                    "settlement": {
+                        "fees": [
+                            {
+                                "name": "interchange",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "scheme",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "mms",
+                                "amount": "0"
+                            }
+                        ],
+                        "totalFeeAmount": "5.35",
+                        "totalSettlementAmount": "71.1"
+                    }
+                },
+                {
+                    "status": "accepted",
+                    "partyId": "PO4033919758",
+                    "merchantId": "000000",
+                    "storeReference": "",
+                    "terminalId": "37740426",
+                    "merchantClassificationCode": "7299",
+                    "transactionType": "sale",
+                    "singleMessageOriginatingCreditTransfer": false,
+                    "issuerCountry": "GBR",
+                    "pan": "000000******1107",
+                    "cardExpiryDate": "0123",
+                    "transactionAmount": "25.64",
+                    "transactionCurrency": "GBP",
+                    "transactionCashbackAmount": "0",
+                    "originalAmountPreDynamicCurrencyConversion": "",
+                    "originalAmountCurrencyPreDynamicCurrencyConversion": "",
+                    "transactionDateTime": "2022-01-01T09:00:00.000ZT07:00:00.000Z",
+                    "payeeReference": "20110090006006970A57",
+                    "schemeReference": "482130292556964",
+                    "worldpayTransactionSource": "C",
+                    "airlineTicketNumber": "",
+                    "authorisationMethod": "1",
+                    "authorisationCode": "006970",
+                    "tradingDay": "20220510",
+                    "settlement": {
+                        "fees": [
+                            {
+                                "name": "interchange",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "scheme",
+                                "amount": "0"
+                            },
+                            {
+                                "name": "mms",
+                                "amount": "0"
+                            }
+                        ],
+                        "totalFeeAmount": "1.54",
+                        "totalSettlementAmount": "24.1"
+                    }
+                }
+            ],
+            "unsettledTransactions": [],
+            "settlement": {
+                "fees": [],
+                "totalFeeAmount": "17.48",
+                "totalSettlementAmount": "239.41"
+            },
+            "summary": {
+                "unsettledTransactions": {
+                    "quantity": 0,
+                    "totalAmount": "0"
+                },
+                "settledTransactions": {
+                    "quantity": 5,
+                    "totalAmount": "239.41"
+                }
+            }
+        }
+    ],
+    "settlement": {
+        "fees": [],
+        "totalFeeAmount": "17.48",
+        "totalSettlementAmount": "239.41"
+    },
+    "summary": {
+        "unsettledTransactions": {
+            "quantity": 0,
+            "totalAmount": "0"
+        },
+        "settledTransactions": {
+            "quantity": 5,
+            "totalAmount": "239.41"
+        }
+    }
+}

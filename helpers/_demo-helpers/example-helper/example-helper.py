@@ -14,8 +14,8 @@ class example_helper(object):
     @staticmethod
     def start():
         params = helper_param_constructor.eval()
-        for param in params:
-            print(param[0], param[1])
+        for param_key in params:
+            print(param_key, params[param_key])
 
 # USE THIS FOR SCRIPT ENTRY
 if __name__ == "__main__":

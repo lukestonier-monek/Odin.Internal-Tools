@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "_demo-helpers/example-helper": "python _demo-helpers/example-helper/example-helper.py"
+    "_demo-helpers/example-helper": "python helpers/_demo-helpers/example-helper/example-helper.py",
+    "testing-helpers/settlement/settlement-file-gen-helper": "python helpers/testing-helpers/settlement/settlement-helper/settlement-file-gen-helper.py"
   },
   "author": "Monek LTD",
   "license": "ISC"

@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: >
+  An Amazon event bridge trigger that retrieves metadata for the object that has been
+  created.
+
+Parameters: 
+  NetworkStackName: 
+    # items from other stacks - note stack used to be called DSO-Network
+    Description: "Name of an active CloudFormation stack that contains the networking resources, such as the subnet and security group, that will be used in this stack."
+    Type: "String"
+    Default : "DSO-Network"
+
+Mappings:
+  # Maps configuration required per AWS account
+  AccountMap:
+    "524429825864": # Dev account
+      SettlementBucket: monek-settlement-dev
+
+    "043165574600": # Staging account
+      SettlementBucket: odin-settlement
+
+Resources:
+  OdinInternalTools:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Runtime: python3.9
+      CodeUri: ./helpers/
+      Handler: app.lambda_handler
+      Description: >-
+        Internal tooling lambda
+      MemorySize: 128
+      Timeout: 120
+              
+      Environment:
+        Variables:
+          settlementBucket: !FindInMap [AccountMap, !Ref "AWS::AccountId", SettlementBucket]

@@ -1,0 +1,45 @@
+name: Odin Internal Tools CI/CD
+
+on:
+  push:
+    branches: [ main ]
+    
+env:
+  AWS_REGION: eu-west-2
+  DEV_S3_BUCKET: monek-deployment-artefacts
+  CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::524429825864:role/GitHub-CloudFormation-Dev-Execution
+  PIPELINE_EXECUTION_ROLE: arn:aws:iam::524429825864:role/GitHub-Actions-Dev-Workflow
+  STACK_NAME: OdinInternalTools-Stack
+  
+jobs:   
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+          
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ env.PIPELINE_EXECUTION_ROLE }}
+          role-session-name: feature-deployment
+          role-duration-seconds: 3600
+          role-skip-session-tagging: true
+          
+      - name: Build container
+        run: sam build
+      - name: Deploy
+        run: |
+          sam deploy \
+          --no-fail-on-empty-changeset \
+          --stack-name ${{ env.STACK_NAME }} \
+          --s3-bucket ${{ env.DEV_S3_BUCKET }} \
+          --role-arn ${{ env.CLOUDFORMATION_EXECUTION_ROLE }} \
+          --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM \
+          --region ${{ env.AWS_REGION }}

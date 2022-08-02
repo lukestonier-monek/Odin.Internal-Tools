@@ -3,6 +3,14 @@ name: Odin Internal Tools CI/CD
 on:
   push:
     branches: [ main ]
+
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, synchronize]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
     
 env:
   AWS_REGION: eu-west-2
